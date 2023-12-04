@@ -4,22 +4,16 @@
 
     <!-- section 1 -->
     <!-- mobile -->
-    <div
-      class="desktop:hidden flex flex-col justify-center items-center text-center px-8"
-    >
+    <div class="desktop:hidden flex flex-col justify-center items-center text-center px-8 pt-24 md:pt-0">
       <h1 class="font-bold text-2xl">
         Mendidik Manusia Kompeten dan Berintegritas
       </h1>
 
       <div class="flex flex-row gap-x-3 mt-2">
-        <button
-          class="w-20 h-10 bg-btn1 rounded-lg font-medium text-lg text-black"
-        >
+        <button class="w-20 h-10 bg-btn1 rounded-lg font-medium text-lg text-black">
           Masuk
         </button>
-        <button
-          class="w-20 h-10 bg-btn2 rounded-lg font-medium text-lg text-black"
-        >
+        <button class="w-20 h-10 bg-btn2 rounded-lg font-medium text-lg text-black">
           Daftar
         </button>
       </div>
@@ -39,16 +33,10 @@
       <h1 class="font-bold text-2xl">Daftar Anak</h1>
       <div class="flex desktop:flex-row flex-col gap-y-3 desktop:gap-x-6 pt-2">
         <!-- 1 -->
-        <div
-          class="w-52 p-2 rounded-lg bg-btn4 flex flex-row justify-center items-center gap-x-2"
-        >
+        <div class="w-52 p-2 rounded-lg bg-btn4 flex flex-row justify-center items-center gap-x-2">
           <div class="flex items-start">
             <div class="w-14 h-14 rounded-full">
-              <img
-                src="@/assets/img/306.png"
-                class="bg-cover rounded-full"
-                alt=""
-              />
+              <img src="@/assets/img/306.png" class="bg-cover rounded-full" alt="" />
             </div>
           </div>
           <div class="flex flex-col">
@@ -58,14 +46,10 @@
         </div>
         <!-- 2 -->
         <nuxt-link to="/Login/login_anak">
-            <div class="w-52 p-2 rounded-lg bg-btn4 flex flex-row justify-center items-center gap-x-2">
+          <div class="w-52 p-2 rounded-lg bg-btn4 flex flex-row justify-center items-center gap-x-2">
             <div class="flex items-center">
               <div class="w-14 h-14 rounded-full">
-                <img
-                  src="@/assets/img/Group311.png"
-                  class="bg-cover rounded-full"
-                  alt=""
-                />
+                <img src="@/assets/img/Group311.png" class="bg-cover rounded-full" alt="" />
               </div>
             </div>
             <h1 class="font-semibold text-lg text-white">Tambah Anak</h1>
@@ -143,44 +127,24 @@
       <h1 class="font-bold text-2 desktop:pt-8 pt-4 text-2xl text-center">
         Belajar Di Piwulang Becik
       </h1>
-      <ul
-        class="relative m-0 w-full list-none overflow-hidden p-0 transition-[height] duration-200 ease-in-out"
-        data-te-stepper-init
-        data-te-stepper-type="vertical"
-      >
+      <ul class="relative m-0 w-full list-none overflow-hidden p-0 transition-[height] duration-200 ease-in-out"
+        data-te-stepper-init data-te-stepper-type="vertical">
         <!-- Langkah 1 -->
-        <li
-          data-te-stepper-step-ref
-          class="relative after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-px after:h-[calc(100%-2.45rem)] after:w-px after:bg-[#e0e0e0] after:content-[''] dark:after:bg-neutral-600"
-        >
-          <div
-            data-te-stepper-head-ref
-            class="flex cursor-pointer items-center p-6 leading-[1.3rem] no-underline"
-          >
-            <span
-              data-te-stepper-head-icon-ref
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full bg-slate-300 text-sm font-medium text-[#40464f]"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-6 h-6"
-              >
+        <li data-te-stepper-step-ref
+          class="relative after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-px after:h-[calc(100%-2.45rem)] after:w-px after:bg-[#e0e0e0] after:content-[''] dark:after:bg-neutral-600">
+          <div data-te-stepper-head-ref class="flex cursor-pointer items-center p-6 leading-[1.3rem] no-underline">
+            <span data-te-stepper-head-icon-ref
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full bg-slate-300 text-sm font-medium text-[#40464f]">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                 <path
-                  d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z"
-                />
+                  d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z" />
                 <path
-                  d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z"
-                />
+                  d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z" />
               </svg>
             </span>
             <span class="text-black font-semibold">Step 1</span>
           </div>
-          <div
-            data-te-stepper-content-ref
-            class="overflow-hidden pl-[3.75rem] pr-6"
-          >
+          <div data-te-stepper-content-ref class="overflow-hidden pl-[3.75rem] pr-6">
             <p class="text-black font-semibold">Kontrak Belajar</p>
             <p>
               Anak, dengan pendampingan orang tua, menentukan kurikulum dan
@@ -198,38 +162,21 @@
         </li>
 
         <!-- Langkah 2 -->
-        <li
-          data-te-stepper-step-ref
-          class="relative after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-px after:h-[calc(100%-2.45rem)] after:w-px after:bg-[#e0e0e0] after:content-[''] dark:after:bg-neutral-600"
-        >
-          <div
-            data-te-stepper-head-ref
-            class="flex cursor-pointer items-center p-6 leading-[1.3rem] no-underline"
-          >
-            <span
-              data-te-stepper-head-icon-ref
-              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full bg-slate-300 text-sm font-medium text-[#40464f]"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="w-6 h-6"
-              >
+        <li data-te-stepper-step-ref
+          class="relative after:absolute after:left-[2.45rem] after:top-[3.6rem] after:mt-px after:h-[calc(100%-2.45rem)] after:w-px after:bg-[#e0e0e0] after:content-[''] dark:after:bg-neutral-600">
+          <div data-te-stepper-head-ref class="flex cursor-pointer items-center p-6 leading-[1.3rem] no-underline">
+            <span data-te-stepper-head-icon-ref
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full bg-slate-300 text-sm font-medium text-[#40464f]">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                 <path
-                  d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z"
-                />
+                  d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z" />
                 <path
-                  d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z"
-                />
+                  d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z" />
               </svg>
             </span>
             <span class="text-black font-semibold">Step 2</span>
           </div>
-          <div
-            data-te-stepper-content-ref
-            class="overflow-hidden pl-[3.75rem] pr-6"
-          >
+          <div data-te-stepper-content-ref class="overflow-hidden pl-[3.75rem] pr-6">
             <p class="text-black font-semibold">Modul Setara Daring</p>
             <p>
               Piwulang Becik memanfaatkan layanan dari Kemdikbud dalam
@@ -247,17 +194,12 @@
 
     <!-- section 6 -->
     <div class="desktop:mt-20 mt-10 bg-background h-full">
-      <div
-        class="desktop:pt-10 desktop:pb-10 pt-5 pb-5 flex flex-col justify-center items-center"
-      >
-        <h1
-          class="flex justify-center text-center font-semibold desktop:text-3xl text-2xl"
-        >
+      <div class="desktop:pt-10 desktop:pb-10 pt-5 pb-5 flex flex-col justify-center items-center">
+        <h1 class="flex justify-center text-center font-semibold desktop:text-3xl text-2xl">
           Mengapa Piwulang Becik
         </h1>
         <div
-          class="grid desktop:grid-cols-3 tablet:grid-cols-2 grid-cols-1 gap-6 desktop:pt-16 pt-10 desktop:mx-16 mx-8 items-center"
-        >
+          class="grid desktop:grid-cols-3 tablet:grid-cols-2 grid-cols-1 gap-6 desktop:pt-16 pt-10 desktop:mx-16 mx-8 items-center">
           <!-- 1 -->
           <div class="flex flex-col justify-center text-center items-center">
             <img src="@/assets/img/notebook-dynamic-color.png" alt="" />

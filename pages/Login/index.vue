@@ -5,56 +5,36 @@
     </div>
     <div class="relative">
       <div
-        class="absolute flex flex-col justify-end items-center desktop:flex-row desktop:justify-between desktop:px-16 tablet:px-8 px-1 pb-8 desktop:gap-x-28">
+        class="absolute  flex flex-col justify-end items-center desktop:flex-row desktop:justify-between desktop:px-16 tablet:px-8 px-1 pb-10 desktop:gap-x-28">
         <img src="@/assets/img/Login.png" class="h-1/2 w-1/2" alt="" />
-        <div class="desktop:min-w-max tablet:w-96 w-80 bg-white border border-gray-300 rounded-lg shadow-xl p-6 mt-0">
+        <div class="desktop:min-w-max tablet:w-96 w-80 bg-white border-2 border-gray-300 rounded-lg shadow-xl p-6 mt-0">
           <div class="text-center mb-4">
-            <h1 class="text-2xl font-bold text-gray-900">Daftar Akun Anak</h1>
+            <h1 class="text-2xl font-bold text-gray-900">Pendaftaran Akun</h1>
           </div>
           <form class="flex flex-col gap-y-2">
             <!-- 1 -->
             <div class="desktop:w-96 w-full">
-              <label for="nama ortu" class="text-sm font-semibold text-gray-900">Nama Lengkap Anak</label>
+              <label for="nama ortu" class="text-sm font-semibold text-gray-900">Nama Lengkap Orang Tua</label>
               <input type="text"
                 class="mt-1 block w-full px-3 py-2 border-2 bg-transparent border-gray-700 rounded-lg shadow-sm outline-none" />
               <p class="font-normal text-sm">
                 Nama akan di cantumkan di sertificat Program.
               </p>
             </div>
-
             <!-- 2 -->
             <div class="desktop:w-96 w-full">
-              <label class="text-sm font-semibold text-gray-900">Pilih Usia</label>
-              <div class="relative">
-                <select
-                  class="block appearance-none w-full bg-transparent border-2 border-gray-700 text-gray-700 py-3 px-4 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="grid-state">
-                  <option>PAUD KB(1-3 Tahun)</option>
-                  <option>PAUD KB(1-3 Tahun)</option>
-                  <option>PAUD KB(1-3 Tahun)</option>
-                  <option>PAUD KB(1-3 Tahun)</option>
-                  <option>PAUD KB(1-3 Tahun)</option>
-                  <option>PAUD KB(1-3 Tahun)</option>
-                  <option>PAUD KB(1-3 Tahun)</option>
-                  <option>PAUD KB(1-3 Tahun)</option>
-                  <option>PAUD KB(1-3 Tahun)</option>
-                  <option>PAUD KB(1-3 Tahun)</option>
-                </select>
-                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                  </svg>
-                </div>
-              </div>
+              <label for="nama ortu" class="text-sm font-semibold text-gray-900">Alamat Email</label>
+              <input type="email"
+                class="mt-1 block w-full px-3 py-2 border-2 bg-transparent border-gray-700 rounded-lg shadow-sm outline-none" />
+              <p class="font-normal text-sm">
+                E-mail akan digunakan untuk verifikasi akun.
+              </p>
             </div>
             <!-- 3 -->
             <div class="desktop:w-96 w-full">
-              <label for="nama ortu" class="text-sm font-semibold text-gray-900">Kode Pos</label>
+              <label for="nama ortu" class="text-sm font-semibold text-gray-900">No.Telephone</label>
               <input type="number"
-                class="mt-1 block w-full px-3 py-2 border-2 border-gray-700 bg-transparent rounded-lg shadow-sm outline-none" />
-              <p class="font-normal text-sm">
-                Silahkan masukan kode pos, kelurahan, dan kecamatan
-              </p>
+                class="mt-1 block w-full px-3 py-2 border-2 bg-transparent border-gray-700 rounded-lg shadow-sm outline-none" />
             </div>
             <!-- 4 -->
             <div class="desktop:w-96 w-full">
@@ -77,16 +57,29 @@
                 Minimal 8 karakter kombinasi huruf besar,huruf kecil,dan angka
               </p>
             </div>
+            <div class="flex justify-center text-center max-w-sm">
+              <h1 class="font-medium text-sm">
+                Dengan mendaftar di Sekolah, saya menyetujui Syarat & Ketentuan
+                serta Kebijakan Privasi yang berlaku
+              </h1>
+            </div>
             <!-- button -->
-            <div class="flex flex-row gap-x-2 tablet:justify-end justify-center items-center">
-              <button class="rounded-full w-40 h-10 font-semibold text-base bg-btn2 text-white px-2">
-                Daftar Akun Anak
+            <div class="flex flex-col desktop:flex-row gap-x-5 mt-2 justify-center items-center">
+              <button class="rounded-full w-36 h-10 font-semibold text-base bg-btn2 text-white px-2">
+                Daftar Akun
+              </button>
+              <h1>Atau</h1>
+              <button class="rounded-full w-36 h-10 text-base border-2 border-btn2 text-black px-2">
+                <div class="flex flex-row items-center justify-center">
+                  <img src="@/assets/img/Google2.png" class="w-5 h-5" alt="" />
+                  <p class="font-semibold text-base">Akun Google</p>
+                </div>
               </button>
             </div>
           </form>
         </div>
       </div>
-      <img src="@/assets/img/Rectangle96.png" alt="" class="w-full h-full desktop:pt-60 hidden desktop:flex" />
+      <img src="@/assets/img/Rectangle96.png" alt="" class="w-full  desktop:pt-60" />
     </div>
   </div>
 </template>

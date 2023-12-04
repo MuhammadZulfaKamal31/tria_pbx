@@ -3,76 +3,62 @@
     <Navbar2 />
     <!-- color -->
     <div class="bg-background">
-    <!-- section 1 -->
-    <!-- mobile -->
-    <div
-      class="desktop:hidden flex flex-col justify-center items-center text-center px-8"
-    >
-      <h1 class="font-bold text-2xl">
-        Mendidik Manusia Kompeten dan Berintegritas
-      </h1>
+      <!-- section 1 -->
+      <!-- mobile -->
+      <div class="desktop:hidden flex flex-col justify-center items-center text-center px-8">
+        <h1 class="font-bold text-2xl">
+          Mendidik Manusia Kompeten dan Berintegritas
+        </h1>
 
-      <div class="flex flex-row gap-x-3 mt-2">
-        <button
-          class="w-20 h-10 bg-btn1 rounded-lg font-medium text-lg text-black"
-        >
-          Masuk
-        </button>
-        <button
-          class="w-20 h-10 bg-btn2 rounded-lg font-medium text-lg text-black"
-        >
-          Daftar
-        </button>
-      </div>
-    </div>
-
-    <div class="desktop:flex flex-row items-center relative hidden">
-      <img src="@/assets/img/Group307.png" alt="" />
-      <div class="absolute desktop:bottom-0 desktop:right-0">
-        <div class="flex flex-row justify-between items-center">
-          <div class="flex flex-col gap-y-2 desktop:px-44 px-0">
-            <h1
-              class="font-black desktop:text-3xl text-lg text-white relative z-10"
-            >
-              PKBM PIWULANG BECIK
-            </h1>
-            <h1 class="font-medium text-base text-white relative z-10">
-              Mendidik Manusia Kompeten dan Berintegritas
-            </h1>
-            <div class="flex flex-row gap-x-6">
-              <button
-                class="w-20 h-10 bg-btn1 rounded-lg font-medium text-lg text-white relative z-10"
-              >
-                Masuk
-              </button>
-              <button
-                class="w-20 h-10 bg-btn2 rounded-lg font-medium text-lg text-white relative z-10"
-              >
-                Daftar
-              </button>
-            </div>
+        <div class="flex flex-row gap-x-3 mt-2">
+          <div class="flex flex-row gap-x-6">
+            <nuxt-link to="/login"
+              class="w-20 h-10 bg-btn2 p-2 text-center rounded-lg font-medium text-lg text-white z-10">
+              Masuk
+            </nuxt-link>
+            <nuxt-link to="/daftar"
+              class="w-20  h-10 bg-btn2 p-2 text-center rounded-lg font-medium text-lg text-white z-10">
+              Daftar
+            </nuxt-link>
           </div>
-          <img
-            src="@/assets/img/3pbx.png"
-            class="desktop:flex hidden relative z-0"
-            alt=""
-          />
         </div>
       </div>
-    </div>
 
-    <!-- end section -->
+      <div class="desktop:flex flex-row items-center relative hidden">
+        <img src="@/assets/img/Group307.png" alt="" />
+        <div class="absolute desktop:bottom-0 desktop:right-0">
+          <div class="flex flex-row justify-between items-center">
+            <div class="flex flex-col gap-y-2 desktop:px-44 px-0">
+              <h1 class="font-black desktop:text-3xl text-lg text-white relative z-10">
+                PKBM PIWULANG BECIK
+              </h1>
+              <h1 class="font-medium text-base text-white relative z-10">
+                Mendidik Manusia Kompeten dan Berintegritas
+              </h1>
+              <div class="flex flex-row gap-x-6">
+                <nuxt-link to="/login"
+                  class="w-20 h-10 bg-btn2 p-2 text-center rounded-lg font-medium text-lg text-white z-10">
+                  Masuk
+                </nuxt-link>
+                <nuxt-link to="/daftar"
+                  class="w-20  h-10 bg-btn2 p-2 text-center rounded-lg font-medium text-lg text-white z-10">
+                  Daftar
+                </nuxt-link>
+              </div>
+            </div>
+            <img src="@/assets/img/3pbx.png" class="desktop:flex hidden relative z-0" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- end section -->
 
       <!-- section 2 -->
       <div class="desktop:mt-16 mt-10">
-        <h1
-          class="flex justify-center text-center font-semibold desktop:text-3xl text-2xl"
-        >
+        <h1 class="flex justify-center text-center font-semibold desktop:text-3xl text-2xl">
           Tantangan Dunia Pendidikan
         </h1>
-        <div
-          class="grid desktop:grid-cols-3 tablet:grid-cols-2 grid-cols-1 gap-6 desktop:pt-16 pt-10 desktop:mx-20 mx-8"
-        >
+        <div class="grid desktop:grid-cols-3 tablet:grid-cols-2 grid-cols-1 gap-6 desktop:pt-16 pt-10 desktop:mx-20 mx-8">
           <!-- 1 -->
           <div class="flex flex-col justify-center text-center items-center">
             <img src="@/assets/img/spek.png" alt="" />
@@ -127,14 +113,10 @@
       <!-- section 3 -->
       <div class="desktop:mt-16 mt-10 bg-background h-full">
         <div class="desktop:px-20 px-8">
-          <h1
-            class="flex justify-center text-center font-semibold desktop:text-3xl text-2xl"
-          >
+          <h1 class="flex justify-center text-center font-semibold desktop:text-3xl text-2xl">
             Solusi
           </h1>
-          <div
-            class="grid desktop:grid-cols-3 tablet:grid-cols-2 grid-cols-1 gap-6 desktop:pt-0 pt-4 desktop:mx-20 mx-8"
-          >
+          <div class="grid desktop:grid-cols-3 tablet:grid-cols-2 grid-cols-1 gap-6 desktop:pt-0 pt-4 desktop:mx-20 mx-8">
             <!-- 1 -->
             <div class="flex flex-col justify-center text-center items-center">
               <img src="@/assets/img/notebook-dynamic-color.png" alt="" />
@@ -198,25 +180,17 @@
 
       <!-- section 4 -->
       <div class="mt-10 desktop:mt-20 px-8 desktop:px-20">
-        <h1
-          class="flex justify-center text-center font-semibold desktop:text-3xl text-2xl"
-        >
+        <h1 class="flex justify-center text-center font-semibold desktop:text-3xl text-2xl">
           Pilihan Jenjang
         </h1>
         <div class="flex justify-center items-center">
-          <div
-            class="grid grid-cols-1 gap-y-6 desktop:gap-x-20 desktop:grid-cols-4 desktop:mt-8 mt-4"
-          >
+          <div class="grid grid-cols-1 gap-y-6 desktop:gap-x-20 desktop:grid-cols-4 desktop:mt-8 mt-4">
             <!-- 1 -->
-            <div
-              class="flex flex-col justify-center text-center items-center h-full w-52 rounded-lg bg-background2"
-            >
+            <div class="flex flex-col justify-center text-center items-center h-full w-52 rounded-lg bg-background2">
               <div class="p-4">
                 <img src="@/assets/img/Group34.png" alt="" />
                 <div class="flex justify-center">
-                  <h1
-                    class="flex justify-center items-center h-8 w-16 rounded-lg bg-slate-50 mt-2 font-semibold"
-                  >
+                  <h1 class="flex justify-center items-center h-8 w-16 rounded-lg bg-slate-50 mt-2 font-semibold">
                     PAUD
                   </h1>
                 </div>
@@ -224,15 +198,11 @@
               </div>
             </div>
             <!-- 2 -->
-            <div
-              class="flex flex-col justify-center text-center items-center h-full w-52 rounded-lg bg-background2"
-            >
+            <div class="flex flex-col justify-center text-center items-center h-full w-52 rounded-lg bg-background2">
               <div class="p-4">
                 <img src="@/assets/img/Group305.png" alt="" />
                 <div class="flex justify-center">
-                  <h1
-                    class="flex justify-center items-center h-8 w-16 rounded-lg bg-slate-50 mt-2 font-semibold"
-                  >
+                  <h1 class="flex justify-center items-center h-8 w-16 rounded-lg bg-slate-50 mt-2 font-semibold">
                     SD
                   </h1>
                 </div>
@@ -240,15 +210,11 @@
               </div>
             </div>
             <!-- 3 -->
-            <div
-              class="flex flex-col justify-center text-center items-center h-full w-52 rounded-lg bg-background2"
-            >
+            <div class="flex flex-col justify-center text-center items-center h-full w-52 rounded-lg bg-background2">
               <div class="p-4">
                 <img src="@/assets/img/306.png" alt="" />
                 <div class="flex justify-center">
-                  <h1
-                    class="flex justify-center items-center h-8 w-16 rounded-lg bg-slate-50 mt-2 font-semibold"
-                  >
+                  <h1 class="flex justify-center items-center h-8 w-16 rounded-lg bg-slate-50 mt-2 font-semibold">
                     SMP
                   </h1>
                 </div>
@@ -256,15 +222,11 @@
               </div>
             </div>
             <!-- 4 -->
-            <div
-              class="flex flex-col justify-center text-center items-center h-full w-52 rounded-lg bg-background2"
-            >
+            <div class="flex flex-col justify-center text-center items-center h-full w-52 rounded-lg bg-background2">
               <div class="p-4">
                 <img src="@/assets/img/307.png" alt="" />
                 <div class="flex justify-center">
-                  <h1
-                    class="flex justify-center items-center h-8 w-16 rounded-lg bg-slate-50 mt-2 font-semibold"
-                  >
+                  <h1 class="flex justify-center items-center h-8 w-16 rounded-lg bg-slate-50 mt-2 font-semibold">
                     SMK
                   </h1>
                 </div>
@@ -279,87 +241,47 @@
       <!-- section 5 -->
       <div class="mt-10 desktop:mt-16 px-8 desktop:px-20">
         <div class="flex justify-center">
-          <h1
-            class="text-center font-semibold desktop:text-3xl text-2xl max-w-2xl"
-          >
+          <h1 class="text-center font-semibold desktop:text-3xl text-2xl max-w-2xl">
             Daftar Sekarang dan Nikmati Pengalaman Belajar yang Menyenangkan
           </h1>
         </div>
         <div class="flex">
           <div class="flex">
             <div
-              class="flex flex-col desktop:mx-96 desktop:mt-16 justify-center items-center desktop:min-w-max w-full rounded-lg bg-background3 shadow-xl p-6 mt-6"
-            >
+              class="flex flex-col desktop:mx-96 desktop:mt-16 justify-center items-center desktop:min-w-max w-full rounded-lg bg-background3 shadow-xl p-6 mt-6">
               <form id="daftar">
                 <div class="flex flex-col gap-y-2">
                   <!-- 1 -->
                   <div class="desktop:w-96 w-full">
-                    <label
-                      for="nama ortu"
-                      class="text-sm font-semibold text-gray-900"
-                      >Nama Orang Tua</label
-                    >
-                    <input
-                      type="text"
-                      placeholder="Masukan nama orang tua *"
-                      class="mt-1 block w-full px-3 py-2 border placeholder:text-black border-gray-300 rounded-md shadow-sm outline-none"
-                    />
+                    <label for="nama ortu" class="text-sm font-semibold text-gray-900">Nama Orang Tua</label>
+                    <input type="text" placeholder="Masukan nama orang tua *"
+                      class="mt-1 block w-full px-3 py-2 border placeholder:text-black border-gray-300 rounded-md shadow-sm outline-none" />
                   </div>
                   <!-- 2 -->
                   <div class="desktop:w-96 w-full">
-                    <label
-                      for="phone"
-                      class="text-sm font-semibold text-gray-900"
-                      >Nomor Telepon</label
-                    >
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="Masukkan nomor telepon"
-                      class="mt-1 block w-full px-3 py-2 placeholder:text-black border border-gray-300 rounded-md shadow-sm outline-none"
-                    />
+                    <label for="phone" class="text-sm font-semibold text-gray-900">Nomor Telepon</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon"
+                      class="mt-1 block w-full px-3 py-2 placeholder:text-black border border-gray-300 rounded-md shadow-sm outline-none" />
                   </div>
                   <!-- 3 -->
                   <div class="desktop:w-96 w-full">
-                    <label
-                      for="email"
-                      class="text-sm font-semibold text-gray-900"
-                      >Email Orang Tua</label
-                    >
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Masukkan email orang tua *"
-                      class="mt-1 block w-full px-3 py-2 placeholder:text-black border border-gray-300 rounded-md shadow-sm outline-none"
-                    />
+                    <label for="email" class="text-sm font-semibold text-gray-900">Email Orang Tua</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email orang tua *"
+                      class="mt-1 block w-full px-3 py-2 placeholder:text-black border border-gray-300 rounded-md shadow-sm outline-none" />
                   </div>
                   <!-- 4 -->
                   <div class="desktop:w-96 w-full">
-                    <label
-                      for="nama"
-                      class="text-sm font-semibold text-gray-900"
-                      >Nama Anak</label
-                    >
-                    <input
-                      type="text"
-                      id="nama"
-                      name="nama"
-                      placeholder="Masukkan nama anak *"
-                      class="mt-1 block w-full px-3 py-2 placeholder:text-black border border-gray-300 rounded-md shadow-sm outline-none"
-                    />
+                    <label for="nama" class="text-sm font-semibold text-gray-900">Nama Anak</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama anak *"
+                      class="mt-1 block w-full px-3 py-2 placeholder:text-black border border-gray-300 rounded-md shadow-sm outline-none" />
                   </div>
                   <!-- 5 -->
                   <div class="desktop:w-96 w-full">
-                    <label class="text-sm font-semibold text-gray-900"
-                      >Pilih Jenjang</label
-                    >
+                    <label class="text-sm font-semibold text-gray-900">Pilih Jenjang</label>
                     <div class="relative">
                       <select
                         class="block appearance-none w-full border border-gray-300 py-3 px-4 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-state"
-                      >
+                        id="grid-state">
                         <option>-- Pilih Jenjang --</option>
                         <option>PAUD KB(1-3 Tahun)</option>
                         <option>PAUD KB(1-3 Tahun)</option>
@@ -371,31 +293,20 @@
                         <option>PAUD KB(1-3 Tahun)</option>
                         <option>PAUD KB(1-3 Tahun)</option>
                       </select>
-                      <div
-                        class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
-                      >
-                        <svg
-                          class="fill-current h-4 w-4"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                          />
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                         </svg>
                       </div>
                     </div>
                   </div>
                   <!-- 6 -->
                   <div class="desktop:w-96 w-full">
-                    <label class="text-sm font-semibold text-gray-900"
-                      >Pilih Tahun Ajaran</label
-                    >
+                    <label class="text-sm font-semibold text-gray-900">Pilih Tahun Ajaran</label>
                     <div class="relative">
                       <select
                         class="block appearance-none w-full border border-gray-300 py-3 px-4 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-state"
-                      >
+                        id="grid-state">
                         <option>-- Pilih Tahun Ajaran --</option>
                         <option>PAUD KB(1-3 Tahun)</option>
                         <option>PAUD KB(1-3 Tahun)</option>
@@ -407,31 +318,20 @@
                         <option>PAUD KB(1-3 Tahun)</option>
                         <option>PAUD KB(1-3 Tahun)</option>
                       </select>
-                      <div
-                        class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
-                      >
-                        <svg
-                          class="fill-current h-4 w-4"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                          />
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                         </svg>
                       </div>
                     </div>
                   </div>
                   <!-- 7 -->
                   <div class="desktop:w-96 w-full">
-                    <label class="text-sm font-semibold text-gray-900"
-                      >Pilih Tipe Program</label
-                    >
+                    <label class="text-sm font-semibold text-gray-900">Pilih Tipe Program</label>
                     <div class="relative">
                       <select
                         class="block appearance-none w-full border border-gray-300 py-3 px-4 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-state"
-                      >
+                        id="grid-state">
                         <option>-- Pilih Tipe Program --</option>
                         <option>PAUD KB(1-3 Tahun)</option>
                         <option>PAUD KB(1-3 Tahun)</option>
@@ -443,31 +343,20 @@
                         <option>PAUD KB(1-3 Tahun)</option>
                         <option>PAUD KB(1-3 Tahun)</option>
                       </select>
-                      <div
-                        class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
-                      >
-                        <svg
-                          class="fill-current h-4 w-4"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                          />
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                         </svg>
                       </div>
                     </div>
                   </div>
                   <!-- 8 -->
                   <div class="desktop:w-96 w-full">
-                    <label class="text-sm font-semibold text-gray-900"
-                      >Pilih Kelas Trial</label
-                    >
+                    <label class="text-sm font-semibold text-gray-900">Pilih Kelas Trial</label>
                     <div class="relative">
                       <select
                         class="block appearance-none w-full border border-gray-300 py-3 px-4 pr-8 rounded-lg leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                        id="grid-state"
-                      >
+                        id="grid-state">
                         <option>-- Pilih Kelas Trial --</option>
                         <option>PAUD KB(1-3 Tahun)</option>
                         <option>PAUD KB(1-3 Tahun)</option>
@@ -479,41 +368,23 @@
                         <option>PAUD KB(1-3 Tahun)</option>
                         <option>PAUD KB(1-3 Tahun)</option>
                       </select>
-                      <div
-                        class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
-                      >
-                        <svg
-                          class="fill-current h-4 w-4"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                          />
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                         </svg>
                       </div>
                     </div>
                   </div>
                   <!-- 9 -->
                   <div class="flex items-center">
-                    <input
-                      type="checkbox"
-                      id="checkbox"
-                      name="checkbox"
-                      class="form-checkbox h-5 w-5 text-indigo-600"
-                    />
-                    <label
-                      for="checkbox"
-                      class="ml-2 text-black font-medium max-w-xs text-sm"
-                      >Saya bersedia dikirimkan informasi promosi melalui Email
-                      dan Push Notification.</label
-                    >
+                    <input type="checkbox" id="checkbox" name="checkbox" class="form-checkbox h-5 w-5 text-indigo-600" />
+                    <label for="checkbox" class="ml-2 text-black font-medium max-w-xs text-sm">Saya bersedia dikirimkan
+                      informasi promosi melalui Email
+                      dan Push Notification.</label>
                   </div>
                   <!-- button -->
                   <div class="flex justify-center items-center">
-                    <button
-                      class="rounded-lg w-44 h-14 font-semibold text-base bg-btn2 text-white px-2"
-                    >
+                    <button class="rounded-lg w-44 h-14 font-semibold text-base bg-btn2 text-white px-2">
                       Lanjut Pendaftaraan
                     </button>
                   </div>
@@ -521,11 +392,7 @@
               </form>
             </div>
           </div>
-          <img
-            src="@/assets/img/image 8.png"
-            class="w-full desktop:block hidden"
-            alt=""
-          />
+          <img src="@/assets/img/image 8.png" class="w-full desktop:block hidden" alt="" />
         </div>
       </div>
       <!-- end section 5 -->

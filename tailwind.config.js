@@ -8,10 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily:{
+      fontFamily: {
         inter: ("Inter")
       },
-      colors:{
+      colors: {
         'btn': '#EAA030',
         'btn1': '#FFC737',
         'btn2': '#F6B816',
@@ -33,6 +33,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-hamburgers')],
 }
 

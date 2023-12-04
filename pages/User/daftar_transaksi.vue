@@ -2,7 +2,7 @@
   <div class="font-inter">
     <Navbar />
     <!-- section 1 -->
-    <div class="desktop:flex flex-row items-center relative hidden">
+    <div class="desktop:flex flex-row items-center relative hidden ">
       <img src="@/assets/img/Group308.png" alt="" />
       <div class="absolute">
         <div class="flex flex-col desktop:mx-16 desktop:mt-5">
@@ -10,7 +10,7 @@
             Daftar Transaksi
           </h1>
           <!-- 1 -->
-          <h1 class="font-medium desktop:text-base text-normal text-white">
+          <h1 class="font-medium desktop:text-base text-normal text-white ">
             Semua transaksi seperti Kelas, Pembayaran Pendidikan akan
             ditampilkan di sini.
           </h1>
@@ -20,13 +20,14 @@
     <!-- end section 1 -->
 
     <!-- color -->
-    <div class="bg-background">
+    <div class="bg-background ">
       <!-- section 2 -->
-      <div class="w-full h-auto">
+      <div class="w-full h-auto pt-20">
         <div class="flex flex-row desktop:mx-16 mx-8 pt-8 gap-x-10">
           <!-- 1 -->
-          <div class="w-full">
-            <div class="bg-white rounded-lg p-7 w-auto h-fit">
+          <div class=" w-72 md:w-full "
+            :class="active ? 'fixed md:static z-10 shadow-md md:shadow-none' : 'hidden md:block '">
+            <div class=" bg-white rounded-lg p-7 w-auto h-fit">
               <h1 class="font-semibold text-xl mb-2">Status Pembayaran</h1>
               <div class="pt-2 flex flex-col gap-y-2">
                 <!-- 1 -->
@@ -63,26 +64,33 @@
                   <h1 class="font-normal text-gray-600 text-base">Pembayaran Pendidikan</h1>
                 </div>
               </div>
+              <div @click="toggle" class=" md:hidden flex justify-center my-3">
+                <div class=" bg-yellow-500 p-2 px-5 rounded-md">
+                  OK
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- 2 -->
           <div class="w-full">
             <div class="flex flex-col">
-              <div class="flex flex-row gap-x-4">
+              <!-- toggle mobile -->
+              <div @click="toggle" class=" p-2 my-5 bg-white w-32 md:hidden block rounded-md">Status Pembayaran</div>
+              <div class="flex flex-col md:flex-row gap-4">
                 <!-- search -->
                 <div class="relative text-black items-center">
                   <input type="search"
-                    class="w-96 h-12 px-2 bg-white text-black focus:outline-none rounded-md border-none pr-8"
+                    class="md:w-96 w-full h-12 px-2 bg-white text-black focus:outline-none rounded-md border-none pr-8"
                     placeholder="Cari transaksimu di sini" />
                   <button type="submit" class="absolute right-0 top-0 mt-4 mr-4">
                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
                       <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                      <style>
-                        svg{
+                      <!-- <style>
+                        svg {
                           fill: #000000;
                         }
-                      </style>
+                      </style> -->
                       <path
                         d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                     </svg>
@@ -91,13 +99,12 @@
                 <!-- Calender -->
                 <div class="relative text-black items-center">
                   <input type="date"
-                    class="w-96 h-12 px-2 bg-white text-black focus:outline-none rounded-md border-none"
+                    class="md:w-96 w-full h-12 px-2 bg-white text-black focus:outline-none rounded-md border-none"
                     placeholder="Tanggal Transaksi" />
                 </div>
               </div>
               <!-- daftar -->
-              <div
-                class="w-full h-96 bg-white mt-5 rounded-lg pt-5 flex justify-center items-center text-center">
+              <div class="w-full h-96 bg-white mt-5 rounded-lg pt-5 flex justify-center items-center text-center">
                 <div>
                   <h1 class="text-black font-semibold text-lg">
                     Belum Ada Transaksi
@@ -118,6 +125,11 @@
 </template>
 
 <script setup>
+
+const active = ref(false)
+const toggle = () => {
+  active.value = !active.value
+}
 
 </script>
 
