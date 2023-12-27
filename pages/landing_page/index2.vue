@@ -343,7 +343,7 @@
             </div>
           </div>
         </div>
-        <img src="@/assets/img/image 8.png" class="w-full desktop:block hidden" alt="" />
+        <img src="@/assets/img/image8.png" class="w-full desktop:block hidden" alt="" />
       </div>
     </div>
     <!-- end section 5 -->
