@@ -19,9 +19,11 @@
     </div>
   </div>
 </template>
+<script setup>
+</script>
 
 <style>
-/* .dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu {
   display: block;
-} */
+}
 </style>

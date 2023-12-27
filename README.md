@@ -78,3 +78,13 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 
 
 
+const active = ref(false);
+const toggle = () => {
+    active.value = !active.value
+}
+
+      <div @click="toggle" class="tham tham-e-squeeze tham-w-6" :class="active ? 'tham-active' : ''">
+            <div class="tham-box">
+                <div class="tham-inner" />
+            </div>
+        </div>

@@ -1,11 +1,11 @@
 <template>
   <div>
-    <Navbar2 />
+    <Navbar2 :scroll="scrollToForm" />
     <!-- color -->
     <div class="bg-background">
       <!-- section 1 -->
       <!-- mobile -->
-      <div class="desktop:hidden flex flex-col justify-center items-center text-center px-8">
+      <div class="desktop:hidden flex flex-col justify-center items-center text-center px-8 pt-20 md:pt-0">
         <h1 class="font-bold text-2xl">
           Mendidik Manusia Kompeten dan Berintegritas
         </h1>
@@ -16,7 +16,7 @@
               class="w-20 h-10 bg-btn2 p-2 text-center rounded-lg font-medium text-lg text-white z-10">
               Masuk
             </nuxt-link>
-            <nuxt-link to="/daftar"
+            <nuxt-link to="#" @click="scrollToForm"
               class="w-20  h-10 bg-btn2 p-2 text-center rounded-lg font-medium text-lg text-white z-10">
               Daftar
             </nuxt-link>
@@ -40,7 +40,7 @@
                   class="w-20 h-10 bg-btn2 p-2 text-center rounded-lg font-medium text-lg text-white z-10">
                   Masuk
                 </nuxt-link>
-                <nuxt-link to="/daftar"
+                <nuxt-link to="#" @click="scrollToForm"
                   class="w-20  h-10 bg-btn2 p-2 text-center rounded-lg font-medium text-lg text-white z-10">
                   Daftar
                 </nuxt-link>
@@ -401,4 +401,17 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+
+const scrollToForm = () => {
+  const formElement = document.getElementById('daftar');
+
+  if (formElement) {
+    window.scrollTo({
+      top: formElement.offsetTop,
+      behavior: 'smooth',
+    });
+  }
+};
+
+</script>

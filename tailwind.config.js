@@ -4,7 +4,9 @@ module.exports = {
     "./pages/**/*.{vue,js,ts,tsx,jsx}",
     "./components/**/*.{vue,js,ts,tsx,jsx}",
     "./layouts/**/*.{vue,js,ts,tsx,jsx}",
+    "./nuxt.config.{js,ts}",
     "./plugins/**/*.{vue,js,ts,tsx,jsx}",
+    "./node_modules/flowbite/**/*.{js,ts}"
   ],
   theme: {
     extend: {
@@ -33,6 +35,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require('tailwind-hamburgers')],
+  plugins: [
+    require('tailwind-hamburgers'),
+    require('flowbite/plugin')
+  ],
 }
 

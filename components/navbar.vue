@@ -1,20 +1,50 @@
 <template>
   <nav
-    class="flex flex-col md:flex-row justify-between px-10 pt-3 pb-3 w-full bg-white items-center fixed z-10 md:relative shadow-md md:shadow-none">
-    <!-- burger -->
-    <div class=" flex justify-between w-full">
-      <nuxt-link to="/User/index3"><img src="@/assets/img/pwb1.png" class=" w-12 tablet:w-20" alt=""></nuxt-link>
-      <div class=" md:hidden block py-4">
-        <div @click="toggle" class="tham tham-e-squeeze tham-w-6" :class="!active ? 'tham-active' : ''" ref="tham">
-          <div class="tham-box">
-            <div class="tham-inner" />
+    class="flex flex-col md:flex-row justify-between px-7 pt-3 pb-3 w-full bg-white items-center fixed z-10 md:relative shadow-md md:shadow-none">
+    <!-- Navbar Mobile -->
+    <div class=" flex justify-between items-center w-full">
+      <div class=" flex gap-3">
+        <div class=" md:hidden block py-4">
+          <div @click="toggle" class="tham tham-e-squeeze tham-w-6" :class="!active ? 'tham-active' : ''" ref="tham">
+            <div class="tham-box">
+              <div class="tham-inner" />
+            </div>
           </div>
         </div>
+        <nuxt-link to="/User/index3"><img src="@/assets/img/pwb1.png" class=" w-12 tablet:w-20" alt=""></nuxt-link>
       </div>
+      <div @click="toggleSearch">
+        <svg class=" flex md:hidden" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">
+          <path
+            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+        </svg>
+      </div>
+      <!-- search mobile -->
+      <div class=" fixed bg-white items-center justify-between gap-4" :class="activeSearch ? 'hidden' : ' flex'">
+        <div @click="toggleSearch">
+          <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+          </svg>
+        </div>
+        <div>
+          <input type="search"
+            class="  tablet:w-96 w-[115%]  h-12 border-2 border-gray-300 px-2 bg-white text-black focus:outline-none rounded-md pr-10"
+            placeholder="Cari transaksimu di sini">
+          <button type="submit" class="absolute right-0 top-0 mt-4 -mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
     </div>
 
+    <!-- Navbar Dekstop -->
     <div class="flex flex-col-reverse w-full tablet:flex-row items-start md:items-center gap-6 "
-      :class="active ? ' hidden md:flex' : ' block'">
+      :class="active ? ' hidden md:flex' : 'block'">
 
       <div class="relative text-black items-center hidden tablet:block">
         <input type="search"
@@ -128,12 +158,17 @@
 
 <script setup>
 
+//toogle navbar
 const active = ref(true)
 const toggle = () => {
   active.value = !active.value
 }
 
-
+//toggle search mobile
+const activeSearch = ref(true)
+const toggleSearch = () => {
+  activeSearch.value = !activeSearch.value;
+}
 
 </script>
 <style>
